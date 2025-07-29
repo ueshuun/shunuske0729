@@ -1,32 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import PurchaseView from '../views/PurchaseView.vue'; // 購入ページの読み込み
+import WeatherView from '../views/WeatherView.vue'
+import AreaView from '@/views/AreaView.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/Area',
+    name: 'Area',
+    component: AreaView
   },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  },
-  
-  // 購入ページのルートを追加
-  {
-    path: '/purchase',
-    name: 'purchase',
-    component: PurchaseView
+{
+    path: '/Weather',
+    name: 'Weather',
+    component: WeatherView
   }
-
 ]
 
 const router = new VueRouter({

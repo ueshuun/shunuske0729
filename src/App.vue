@@ -26,9 +26,8 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn text to="/" tag="router-link">Home</v-btn>
-      <v-btn text to="/about" tag="router-link">About</v-btn>
-      <v-btn text to="/purchase" tag="router-link">購入</v-btn> <!-- 購入ビューを追加 -->
+      <v-btn text to="/Area" tag="router-link">都道府県</v-btn>
+      <v-btn text to="/Weather" tag="router-link">天気</v-btn>
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
